@@ -11,6 +11,21 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        #scrollable::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        #scrollable::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F9FAFB;
+        }
+
+        #scrollable::-webkit-scrollbar-thumb {
+            width: 2px;
+            background-color: #60a5fa;
+        }
+    </style>
     @livewireStyles
 
     <!-- Scripts -->

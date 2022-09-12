@@ -19,8 +19,9 @@ class ResponseFactory extends Factory
         return [
             'question_id' => rand(1,10),
             'response' => $this->faker->text(40),
-            'name' => $this->faker->name(),
+            'name' => $this->faker->firstName(),
             'email' => $this->faker->safeEmail(),
+            'pseudo' => $this->faker->lastName(),
         ];
     }
 }

@@ -1,11 +1,7 @@
 {
-  "resources/img/logo_en.png": {
-    "file": "assets/logo_en.17155af5.png",
-    "src": "resources/img/logo_en.png"
-  },
-  "resources/img/logo_fr.png": {
-    "file": "assets/logo_fr.ae81e2ef.png",
-    "src": "resources/img/logo_fr.png"
+  "resources/img/logo.png": {
+    "file": "assets/logo.659982a6.png",
+    "src": "resources/img/logo.png"
   },
   "resources/js/app.js": {
     "file": "assets/app.ab93cf8a.js",
@@ -13,7 +9,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app.1197bad7.css",
+    "file": "assets/app.117189e7.css",
     "src": "resources/css/app.css",
     "isEntry": true
   }

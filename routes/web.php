@@ -9,6 +9,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ResponseController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Control the lang in the application
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LangController@switchLang']);
 
 Route::get('/', [ForumController::class, 'index']);
 
@@ -41,6 +45,7 @@ Route::middleware('auth')->group(function () {
 
     // Responses
     Route::get('/questions/{id}/responses', [ResponseController::class, 'show'])->name('responses.show');
+    Route::get('/questions/{id}/responses/{response_id}/replies', [ResponseController::class, 'showReplies'])->name('responses.replies');
 });
 
 

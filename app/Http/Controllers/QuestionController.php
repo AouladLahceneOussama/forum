@@ -25,14 +25,17 @@ class QuestionController extends Controller
     {
         $request->validate(
             [
+                'title' => 'required|string',
                 'question' => 'required|string',
             ],
             [
+                'title.required' => 'Required',
                 'question.required' => 'Required'
             ]
         );
 
         Question::create([
+            'title' => $request->title,
             'question' => $request->question
         ]);
 
@@ -50,9 +53,11 @@ class QuestionController extends Controller
     {
         $request->validate(
             [
+                'title' => 'required|string',
                 'question' => 'required|string',
             ],
             [
+                'title.required' => 'Required',
                 'question.required' => 'Required'
             ]
         );

@@ -16,8 +16,10 @@ return new class extends Migration
         Schema::create('responses', function (Blueprint $table) {
             $table->id();
             $table->foreignId('question_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('parent_response_id')->nullable();
             $table->text('response');
             $table->string('name');
+            $table->string('pseudo');
             $table->string('email');
             $table->boolean('validated')->default(false);
             $table->timestamps();

@@ -1,1 +1,1 @@
-<img src="{{ Vite::asset('resources/img/logo_fr.png') }}" alt="Logo" class="w-32">
+<img src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo" class="w-32">

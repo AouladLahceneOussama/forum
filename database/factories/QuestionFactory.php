@@ -17,7 +17,7 @@ class QuestionFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->title(),
+            'title' => $this->faker->text(20),
             'question' => $this->faker->text(40),
         ];
     }

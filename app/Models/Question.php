@@ -14,7 +14,13 @@ class Question extends Model
         'question',
     ];
 
-    public function responses(){
+    public function responses()
+    {
         return $this->hasMany(Response::class);
+    }
+
+    public function likes()
+    {
+        return $this->hasMany(Like::class);
     }
 }

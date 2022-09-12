@@ -81,7 +81,7 @@
         </div>
 
         <!-- Users -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+        <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('questions')" :active="request()->routeIs('questions')">
                 {{ __('Questions') }}
             </x-responsive-nav-link>
